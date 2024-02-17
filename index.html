@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankist APP</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="bankist_design.css">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png" />
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- navigation -->
+    <nav>
+        <p>Login in to get storted</p>
+        <img src="images/logo.png" alt="logo">
+        <form class="nav_form">
+            <input type="text" id="user" placeholder="user">
+            <input type="text" id="pin" placeholder="PIN">
+            <button id="nav_btn">&rarr;</button>
+        </form>
+    </nav>
+
+    <div class="bankist_app">
+
+        <!--1. balance  row-->
+        <div class="balance">
+            <div class="cur_balance">
+                <h2 class="cur_balance_title">Current balance</h2> 
+                <p class="cur_date_title" >As of <span id="cur_date">05/03/2037</span></p>
+            </div>
+            
+            <div class="balance_value_warper">
+                <h1 class="balance_value">0000</h1>
+            </div>
+        </div>
+
+        <!-- 2.movements and featurse -->
+        <div class="movements_featurse">
+
+            <!-- movement column -->
+            <div class="movement_wraper">
+               <div class="movements__row">
+                   <div class="movements__type movement__type_deposit">2 DEPOSIT</div>
+                   <div class="movements__date">3 days ago</div>
+                   <div class="movements__value">000&#xa3</div>
+               </div>
+               <div class="movements__row">
+                   <div class="movements__type movement__type_widthdraw">1 withdrawal</div>
+                   <div class="movements__date">24/02/2037</div>
+                   <div class="movements__value">- 380&#xa3</div>
+               </div>
+               <div class="movements__row">
+                <div class="movements__type movement__type_widthdraw">1 withdrawal</div>
+                <div class="movements__date">24/02/2037</div>
+                <div class="movements__value">- 380&#xa3</div>
+            </div>
+            </div>
+
+            <!-- featurs column -->
+           <div class="featurs_wraper">
+
+                <!-- transfer money featurs -->
+               <div class="transfer_money featurs">
+                    <h2 class="transfer_money_title feature_title">Transfer money</h2>
+                    <form action="" class="transfer_money_form form">
+                        <div class="account">
+                            <input type="text" class="transfer_to_user input" >
+                            <p>Transfer to</p>
+                        </div>
+                        <div class="trasfer_amount">
+                            <input type="number" class="transfer_to_amount input">
+                            <p>Amount</p>
+                        </div>
+                        <button class="transer_btn btn">&rarr;</button>
+                    </form>
+               </div>
+
+               <!-- request loan featurs -->
+               <div class="request_loan featurs">
+                <h2 class="transfer_money_title feature_title">Request loan</h2>
+                <form action="" class="loan_form form">
+                    <div class="loan_ammount">
+                        <input type="number" class="input loan_filled">
+                        <p>Amount</p>
+                    </div>
+                    <button  class="loan_btn btn">&rarr;</button>
+                </form>
+               </div>
+
+               <div class="close_account featurs">
+                <h2 class="transfer_money_title feature_title">Close Account</h2>
+                <form action="" class="close_account_form form">
+                    <div class="account">
+                        <input type="text" class="input close_account_user_filled">
+                        <p>Confirm user</p>
+                    </div>
+                    <div class="transfer_amount  ">
+                        <input type="number" class="input close_account_pin_filled">
+                        <p>Confirm PIN</p>
+                    </div>
+                    <button class="close__account_btn btn">&rarr;</button>
+                </form>
+              </div>
+           </div> 
+        </div>
+       <!--3. summary and logout  -->
+       <div class="summary_logOut">
+              <!-- summary -->
+            <div class="summary">
+                <div class="summary_in">
+                    <p class="summary_title">IN</p>
+                    <h1 class="summary_value"><p class="summary_value_in">000</p></h1>  
+                </div>
+                <div class="summary_out">
+                    <p class="summary_title">OUT</p>
+                    <h1 class="summary_value"><p class="summary_value_out">000</p></h1>  
+                </div>
+                <div class="summary_intrest">
+                    <p class="summary_title">INTEREST</p>
+                    <h1 class="summary_value"><p class="summary_value_intrest">000</p></h1>  
+                </div>
+            </div>
+            
+            <!-- sort -->
+            <div class="sort">
+                <p>&darr; SORT</p>
+            </div>
+
+            <!-- logout -->
+            <p class="logout">
+                You will be logout in <span class="logout_time">5:00</span>
+            </p>
+       </div> 
+    </div>
+    <!-- <div class="card">
+
+    </div> -->
+    <script src="bankist_script.js"></script>
+</body>
+</html>
